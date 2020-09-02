@@ -56,8 +56,11 @@ img {
     grid-template-columns: repeat(12,1fr);
 }
 
-.sep-top {
-    margin-top: 7rem;
+.sep-top-sm {
+    margin-top: 3rem;
+}
+.sep-top-bg {
+    margin-top: 6rem;
 }
 
 .nav .container {
@@ -162,11 +165,27 @@ img {
 }
 
 .actions__item {
-    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    
+    box-shadow: 0 0 4px #2241576b;
     grid-column: span 4;
     padding: 2rem;
 }
 
-.actions__item img {
-    
+.social {
+    background: var(--color-primary);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.social__icons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__icons img {
+    max-width: 3rem;
 }
