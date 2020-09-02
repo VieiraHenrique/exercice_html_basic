@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
+
 :root {
     --color-primary: #0F85D1;
     --color-secondary: #6BC631;
@@ -9,7 +11,6 @@
     --gradient: ;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -23,7 +24,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Baloo Tamma 2', sans-serif;
+    font-family: 'Baloo Tamma 2';
 }
 
 ul {
@@ -34,6 +35,15 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
@@ -42,11 +52,12 @@ a {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    gap: 6rem;
+    grid-template-columns: repeat(12,1fr);
 }
 
 .sep-top {
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .nav .container {
@@ -80,7 +91,7 @@ a {
 .btn {
     background: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
     color: var(--white);
-    padding: 1.5rem 2.5rem;
+    padding: 1.2rem 2.7rem;
     border-radius: 10rem;
 }
 
@@ -88,15 +99,74 @@ a {
     color: var(--white);
 }
 
+
+
+.hero {
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,.9)) ,url(img/pexels-md-atik-hasan-4434000.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 80vh;
+}
+
 .hero__text {
-    grid-column: 1/4;
+    margin-top: 15rem;
+    grid-column: 8/12;
+    color:var(--white);
 }
 
-.hero__img {
-    grid-column: 5/7;
+.hero__text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
 }
 
-.hero__img img {
-    border-radius: 50%;
+.hero__text p {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    color: var(--grey-light-extra);
+    line-height: 1.6;
 }
 
+.about .container {
+    display: flex;
+    gap: 5rem;
+}
+
+.about__img img{
+    max-width: 40rem;
+}
+
+.about ul {
+    margin-left: 5rem;
+    list-style: disc;
+}
+
+.blue {
+    color: var(--color-primary);
+}
+
+.quote {
+    background: var(--color-primary);
+    color: var(--white);
+}
+
+.quote .container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote small {
+    margin-left: 30rem;
+}
+
+.actions__item {
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    grid-column: span 4;
+    padding: 2rem;
+}
+
+.actions__item img {
+    
+}
