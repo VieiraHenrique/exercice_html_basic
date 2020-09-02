@@ -160,6 +160,13 @@ img {
     align-items: center;
 }
 
+.quote a,
+.quote a:visited {
+    color: var(--white);
+}
+
+
+
 .quote small {
     margin-left: 30rem;
 }
@@ -188,4 +195,9 @@ img {
 
 .social__icons img {
     max-width: 3rem;
+}
+
+.video .container {
+    display: flex;
+    justify-content: center;
 }
