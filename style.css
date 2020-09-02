@@ -1,0 +1,102 @@
+:root {
+    --color-primary: #0F85D1;
+    --color-secondary: #6BC631;
+    --black: #232323;
+    --white: #fff;
+    --grey: rgb(163, 163, 163);
+    --grey-light: rgb(209, 209, 209);
+    --grey-light-extra: rgb(241, 241, 241);
+    --gradient: ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.sep-top {
+    margin-top: 5rem;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+.nav__logo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 6rem;
+}
+
+.nav__menu ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__menu ul li a {
+    color: var(--grey);
+}
+
+.btn {
+    background: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
+    color: var(--white);
+    padding: 1.5rem 2.5rem;
+    border-radius: 10rem;
+}
+
+.nav__menu ul li .btn {
+    color: var(--white);
+}
+
+.hero__text {
+    grid-column: 1/4;
+}
+
+.hero__img {
+    grid-column: 5/7;
+}
+
+.hero__img img {
+    border-radius: 50%;
+}
+
