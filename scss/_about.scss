@@ -1,0 +1,21 @@
+.about {
+
+    .container {
+        display: flex;
+        gap: 5rem;
+    }
+
+    &__img img {
+        max-width: 40rem;
+    }
+
+    ul {
+        margin-left: 5rem;
+        list-style: disc;
+    }
+}
+
+
+.blue {
+    color: $color-primary;
+}

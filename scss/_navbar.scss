@@ -1,0 +1,37 @@
+.nav {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        img {
+            width: 6rem;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                a {
+                    color: $grey;
+                }
+
+                .btn {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

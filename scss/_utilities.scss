@@ -1,0 +1,27 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.sep-top-sm {
+    margin-top: 3rem;
+}
+
+.sep-top-bg {
+    margin-top: 6rem;
+}
+
+
+.btn {
+    background: linear-gradient(to right bottom, $color-primary, $color-secondary);
+    color: $white;
+    padding: 1.2rem 2.7rem;
+    border-radius: 10rem;
+}

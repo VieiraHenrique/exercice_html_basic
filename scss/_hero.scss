@@ -1,0 +1,25 @@
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .9)), url(img/pexels-md-atik-hasan-4434000.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 80vh;
+
+    &__text {
+        margin-top: 15rem;
+        grid-column: 8/12;
+        color: $white;
+
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            color: $grey-light-extra;
+            line-height: 1.6;
+        }
+
+    }
+}
